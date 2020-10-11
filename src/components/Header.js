@@ -8,7 +8,7 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='md'>
         <LinkContainer to='/'>
           <Navbar.Brand>
-            <i className='fas fa-smile'></i> Hello Kaito
+            <i className='fab fa-connectdevelop'></i> devOcean
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />

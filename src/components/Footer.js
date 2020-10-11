@@ -1,15 +1,12 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   return (
     <footer>
-      <Row>
-        <Col>
-          <i className='fas fa-smile'></i> Hello Kaito
-          <span> &copy; 2020 </span>
-        </Col>
-      </Row>
+      <h6>
+        <i className='fab fa-connectdevelop'></i> devOcean
+        <span> &copy; 2020 </span>
+      </h6>
     </footer>
   );
 };

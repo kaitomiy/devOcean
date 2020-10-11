@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 
 import './App.css';
 import Header from './components/Header';
@@ -14,14 +13,12 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Container className='py-3'>
-        <Switch>
-          <Route exact path='/' component={HomeScreen} />
-          <Route exact path='/about' component={AboutScreen} />
-          <Route exact path='/contact' component={ContactScreen} />
-          <Route exact path='/projects' component={ProjectsScreen} />
-        </Switch>
-      </Container>
+      <Switch>
+        <Route exact path='/' component={HomeScreen} />
+        <Route exact path='/about' component={AboutScreen} />
+        <Route exact path='/contact' component={ContactScreen} />
+        <Route exact path='/projects' component={ProjectsScreen} />
+      </Switch>
       <Footer />
     </Router>
   );
