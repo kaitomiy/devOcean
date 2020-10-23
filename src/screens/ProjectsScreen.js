@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Row, Col, Card, Button, CardDeck, Container } from 'react-bootstrap';
 import axios from 'axios';
 
+import Gif from '../components/Gif';
+
 const ProjectsScreen = () => {
   const [repos, setRepos] = useState([]);
 
@@ -21,6 +23,7 @@ const ProjectsScreen = () => {
   return (
     <Container className='py-3'>
       <h1>My Projects</h1>
+      <Gif />
       <Row>
         {repos.map((repo) => (
           <Col key={repo.id} sm={6} md={4}>

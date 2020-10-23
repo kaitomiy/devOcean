@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import About from './AboutScreen';
 
 const HomeScreen = () => {
   return (
@@ -11,7 +12,10 @@ const HomeScreen = () => {
         justifyContent: 'center',
       }}
     >
-      <h1>Hi, I'm Kaito</h1>
+      <div>
+        <h1>Hi, I'm Kaito</h1>
+        <About />
+      </div>
     </Container>
   );
 };
